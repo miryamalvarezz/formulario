@@ -1,0 +1,123 @@
+body {
+    font-family: Verdana, sans-serif;
+    background-color: rgb(33, 44, 52);
+}
+
+form {
+    background-color: rgb(47, 54, 68);
+    border: 2px solid rgb(99,117,153);
+    border-radius: 5px;
+    padding: 30px;
+    margin: auto;
+    width: 400px;
+    margin-top: 100px;
+}
+
+h1{
+    color: rgb(171,186,226);
+    font-size: 28px;
+    font-weight: bold;
+    font-family: Verdana, sans-serif;
+}
+
+label{
+    color: rgb(171,186,226);
+    font-size: 18px;
+    font-weight: thin;
+    font-family: Verdana, sans-serif;
+}
+
+.formulario {
+    display: grid;
+    gap: 20px;
+}
+
+.formulario__label {
+	display: block;
+	font-weight: 700;
+	padding: 10px;
+	cursor: pointer;
+}
+
+.formulario__grupo-input {
+	position: relative;
+}
+
+.formulario__input {
+	width: 85%;
+	background: #fff;
+	border: 3px solid transparent;
+	border-radius: 5px;
+	height: 35px;
+	line-height: 35px;
+	padding: 0 40px 0 10px;
+	transition: .3s ease all;
+}
+
+.formulario__input-error {
+	font-size: 12px;
+    color:red;
+	margin-bottom: 0;
+	display: none;
+}
+
+.formulario__input-error {
+    display: block;
+}
+
+.formulario__input-vacio {
+    font-size: 12px;
+    color:red;
+	margin-bottom: 0;
+	display: none;
+}
+
+.formulario__input-vacio {
+    display:block;
+}
+
+.formulario__estado-validacion {
+    position: absolute;
+    right:10px;
+    bottom:15px;
+    z-index:100;
+    font-size:16px;
+    opacity:0;
+}
+
+button {
+    background-color: rgb(108,100,252);
+    border: 1.5px solid black;
+    border-radius: 5px;
+    color:#FFFFFF; 
+    display: block;
+    width: 103%;
+    margin: 16px 0;
+    height: 2em;
+    font-size: 1.2rem;
+    min-width: 300px;
+    cursor: pointer;
+    transition: .1s ease all;
+}
+
+.formulario__grupo-correcto .formulario__estado-validacion {
+	color: green;
+	opacity: 1;
+}
+
+.formulario__grupo-incorrecto .formulario__label {
+	color: red;
+}
+
+.formulario__grupo-incorrecto .formulario__estado-validacion {
+	color: red ;
+	opacity: 1;
+}
+
+.formulario__grupo-incorrecto .formulario__input {
+	border: 3px solid red;
+}
+
+.formulario__grupo-correcto .formulario__input {
+	border: 3px solid green;
+}

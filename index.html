@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="es">
+    
+    <head>
+        <meta charset="UTF-8">
+        <meta name="description" content="Formulario HTML"/>
+        <tittle>  </tittle>
+        <link rel="stylesheet" type="text/CSS" href="style.css"/>
+        <link rel="stylesheet" src="formulario/ima_genes">
+        <script src="index.js"></script>
+    </head>
+
+    <body>
+        <main>
+        <form action="" id="formulario" class="formulario">
+            <h1> Create Account</h1>
+
+            <div class="formulario__grupo" id="grupo__nombre"> 
+                <label for="name" class="form_label">Nombre</label>
+                <div class="formulario__grupo-input">
+                    <input type="text" class="formulario__input" id="name" name="name" value="" pattern="[A-Za-z]" required>
+                    <img class="formulario__estado-validacion" src="../error-icon.png"></img>
+                </div> 
+                <small class="formulario__input-vacio">Rellena este campo</small>
+            </div>
+           
+            <div class="formulario__grupo" id="grupo__email">
+                <label for="email" class="form_label">Email</label>
+                <div class="formulario__grupo-input">
+                    <input type="email" class="formulario__input" id="email" name="email" value="" pattern="[A-Za-z0-9.#$]+@[A-Za-z0-9]+\.[A-Za-z0-9]" required>
+                    <img class="formulario__estado-validacion" src="../error-icon.png"></img>
+                </div>
+                <small class="formulario__input-vacio">Rellena este campo</small>
+                <small class="formulario__input-error">Email invalido</small>
+            </div>
+            
+            <div class="formulario__grupo" id="grupo__password">
+                <label for="clave" >Clave</label>
+                <div class="formulario__gruppo-input">
+                    <input type="password" class="formulario__input" id="password" name="password" value="" pattern="[a-z0-5]{8,}" required>
+                    <img class="formulario__estado-validacion" src="error-icon.png"></img>
+                </div>
+                <small class="formulario__input-vacio">Rellena este campo</small>
+                <small class="formulario__input-error">No debe tener menos de 8 caracteres</small>
+            </div>
+           
+            <div class="formulario__grupo" id="grupo__cheked">
+                <label for="clave">Confirme su clave</label>
+                <div class="formulario__gruppo-input">
+                    <input type="password" class="formulario__input" id="cheked" name="cheked" value="" pattern="[a-z0-5]{8,}" required>
+                    
+                    <img class="formulario__estado-validacion" src="error-icon.png"></img>
+                </div>
+                <small class="formulario__input-vacio">Rellena este campo</small>
+                <small class="formulario__input-error">Las contraseñas no coinciden</small>
+            </div>
+            
+            <div class="formulario__grupo formulario__grupo-btnenviar">
+                <button type="sumbit" class="formulario__btn" id="button" name="enviar" value="sumbit">ENVIAR</button>
+            </div>   
+
+        </form>
+
+        </main>
+    </body>
+</html>
